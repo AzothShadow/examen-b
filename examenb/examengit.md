@@ -42,4 +42,33 @@ Esto lo realizamos con el comando amend y el tiene que ser previo al push, si ya
 
         git commit --amend -m "Contenidos 1,2 e índice"
 
-####
+#### 9. Modifica el fichero html.txt eliminando todo su contenido.
+
+#### 10. Pasa a preparado de nuevo el fichero html.txt.
+
+Lo realizamos con add
+
+        git add --all
+
+#### 11. Realiza otra confirmación con comentario “Eliminado texto de contenido html”.
+
+        git commit -m "Eliminando texto de contenido html"
+
+#### 12. Visualiza el log de todo el proyecto.
+
+        git log
+
+#### 13. Vuelve atrás al commit inicial de “Contenidos 1,2 e índice”.
+
+        gig log --oneline
+        git checkout 1918fd7
+
+#### 14. Vuelve al estado final del proyecto (antes de la vuelta atrás).
+
+#### 15. Crea un repositorio público en tu GITHUB y haz un push de todo el proyecto.
+
+    git push
+    git branch -M main
+    git remote add origin https://github.com/AzothShadow/examen-b.git
+    git push -u origin main
+    
